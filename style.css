@@ -6,14 +6,9 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
 }
 
 /* Header Styles */
-header {
-    justify-content: center;
-}
-
 .header-area {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -22,6 +17,7 @@ header {
     margin: 30px auto;
     background-color: #000000;
     border-radius: 20px;
+    color: #FFFFFF;
 }
 
 .header-content {
@@ -43,7 +39,7 @@ header {
 
 .header-button {
     background-color: #FFCD38;
-    color: #000000;
+    color: gray;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -64,4 +60,90 @@ header {
 
 .header-image img {
     height: 100%;
+}
+
+
+/* Main Area */
+.blog-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1102px;
+    margin: 30px auto;
+    grid-gap: 20px;
+}
+
+.blog-page-button-area {
+    grid-column: 1/2;
+    background-color: #000000;
+    border-radius: 10px;
+    height: 275px;
+}
+
+.blog-page-button-area a {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 60%;
+    margin: 30px auto;
+    font-weight: 700;
+
+}
+
+.blog-items-area {
+    grid-column: 2/-1;
+    display: flex;
+    grid-gap: 20px;
+}
+
+.blog-item {
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.blog-image-area img {
+    width: 100%;
+}
+
+.blog-image-area a {
+    text-decoration: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 3px 13px;
+    color: gray;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.blog-page-button-area a:last-child {
+    color: gray;
+    background-color: #FFCD38;
+}
+
+.blog-image-area h3 {
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.blog-time-comment-area {
+    display: flex;
+    color: gray;
+}
+
+.blog-time-comment-area p:last-child {
+    margin-left: 15px;
+}
+
+.blog-time-comment-area i {
+    margin-left: 20px;
+    margin-right: 10px;
 }
