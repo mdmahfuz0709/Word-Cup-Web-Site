@@ -25,7 +25,7 @@ main {
     width: 90%;
     height: 100%;
     margin: 30px auto;
-    background-color: #161616;
+    background-color: #541690;
     border-radius: 20px;
     color: #FFFFFF;
 }
@@ -53,7 +53,7 @@ main {
 
 .header-button {
     background-color: #FFCD38;
-    color: gray;
+    color: #541690;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -61,6 +61,7 @@ main {
     font-size: 16px;
     border-radius: 5px;
     margin-top: 10px;
+    font-weight: 700;
 }
 
 .header-button i {
@@ -91,7 +92,7 @@ main {
 
 .blog-page-button-area {
     grid-column: 1/2;
-    background-color: #000000;
+    background-color: #541690;
     border-radius: 10px;
     height: 275px;
     width: 270px;
@@ -99,13 +100,13 @@ main {
 
 .blog-page-button-area a {
     background-color: #FFFFFF;
-    color: #000000;
+    color: #541690;
     padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     display: block;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 60%;
     margin: 30px auto;
     font-weight: 700;
@@ -114,12 +115,12 @@ main {
 
 .blog-page-button-area a:hover {
     background-color: #FFCD38;
-    color: gray;
+    color: #541690;
 
 }
 
 .blog-page-button-area a:last-child {
-    color: gray;
+    color: #541690;
     background-color: #FFCD38;
 }
 
@@ -134,22 +135,25 @@ main {
 }
 
 .blog-item {
-    border: 1px solid #E8E8E8;
+    border: 2px solid #E8E8E8;
     border-radius: 10px;
 }
 
 .blog-image-area img {
     width: 100%;
+    height: 100%;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
+
 }
 
 .blog-image-area a {
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid #541690;
     border-radius: 5px;
     display: inline-block;
     padding: 3px 13px;
-    color: black;
+    color: #541690;
     margin-left: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -164,11 +168,12 @@ main {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
+    color: #541690;
 }
 
 .blog-time-comment-area {
     display: flex;
-    color: gray;
+    color: #541690;
 }
 
 .blog-time-comment-area p:last-child {
@@ -186,7 +191,7 @@ main {
 
 /* Footer Area */
 footer {
-    background-color: #161616;
+    background-color: #541690;
     color: white;
 }
 
@@ -248,7 +253,7 @@ footer {
 .social-area a:hover {
     background-color: #FFCD38;
     border-radius: 50%;
-    color: gray;
+    color: #541690;
 }
 
 
@@ -264,27 +269,28 @@ footer {
 .upcoming-area {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 1102px;
+    width: 90%;
     margin: 30px auto;
     grid-gap: 20px;
 }
 
 .upcoming-page-button-area {
     grid-column: 1/2;
-    background-color: #000000;
+    background-color: #541690;
     border-radius: 10px;
     height: 275px;
+    width: 270px;
 }
 
 .upcoming-page-button-area a {
     background-color: #FFFFFF;
-    color: #000000;
+    color: #541690;
     padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     display: block;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 60%;
     margin: 30px auto;
     font-weight: 700;
@@ -293,12 +299,12 @@ footer {
 
 .upcoming-page-button-area a:hover {
     background-color: #FFCD38;
-    color: gray;
+    color: #541690;
 
 }
 
 .upcoming-page-button-area a:first-child {
-    color: gray;
+    color: #541690;
     background-color: #FFCD38;
 }
 
@@ -313,14 +319,16 @@ footer {
 }
 
 .upcoming-item {
-    border: 1px solid #E8E8E8;
+    border: 2px solid #E8E8E8;
     border-radius: 10px;
     text-align: center;
 }
 
 .upcoming-image-area img {
     width: 100%;
+    height: 100%;
     border-radius: 10px 10px 0 0;
+    object-fit: cover;
 }
 
 .upcoming-image-area h3 {
@@ -328,6 +336,7 @@ footer {
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 16px;
+    color: #541690;
 }
 
 .upcoming-time-area {
@@ -338,6 +347,7 @@ footer {
 .upcoming-time-area p {
     font-size: 12px;
     margin-bottom: 40px;
+    color: #541690;
 }
 
 /* Mobile Devices */
@@ -412,8 +422,8 @@ footer {
 
     .blog-page-button-area a {
         background-color: #FFFFFF;
-        color: #000000;
-        border: 1px solid gray;
+        color: #541690;
+        border: 1px solid #541690;
         padding: 15px 20px;
         text-align: center;
         text-decoration: none;
@@ -465,6 +475,72 @@ footer {
     .social-area a {
         font-size: 15px;
         padding: 5px 5px;
+    }
+
+
+    /* Upcoming Area */
+
+    /* Main Area */
+    main {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    .upcoming-area {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        margin: 30px auto;
+        grid-gap: 20px;
+        justify-content: center;
+    }
+
+    .upcoming-page-button-area {
+        grid-column: 1/ -1;
+        ;
+        background-color: white;
+        border-radius: 10px;
+        height: 275px;
+        width: 100%;
+    }
+
+    .upcoming-page-button-area a {
+        background-color: #FFFFFF;
+        color: #541690;
+        border: 1px solid #541690;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 10px;
+        width: 35%;
+        font-weight: 700;
+
+    }
+
+    .upcoming-page-items-area {
+        grid-column: 1/ -1;
+        width: 100%;
+    }
+
+    .upcoming-items-area {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .upcoming-items-area a {
+        font-size: 15px;
+    }
+
+    .upcoming-items-area h3 {
+        font-size: 15px;
+    }
+
+    .upcoming-time-area {
+        font-size: 15px;
     }
 }
 
@@ -541,8 +617,8 @@ footer {
 
     .blog-page-button-area a {
         background-color: #FFFFFF;
-        color: #000000;
-        border: 1px solid gray;
+        color: #541690;
+        border: 1px solid #541690;
         padding: 15px 5px;
         text-align: center;
         text-decoration: none;
@@ -595,6 +671,69 @@ footer {
         font-size: 15px;
         padding: 5px 5px;
     }
+
+    /* Upcoming Area */
+    main {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    .upcoming-area {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        margin: 30px auto;
+        grid-gap: 20px;
+        justify-content: center;
+    }
+
+    .upcoming-page-button-area {
+        grid-column: 1/ -1;
+        ;
+        background-color: white;
+        border-radius: 10px;
+        height: 275px;
+        width: 100%;
+    }
+
+    .upcoming-page-button-area a {
+        background-color: #FFFFFF;
+        color: #541690;
+        border: 1px solid #541690;
+        padding: 15px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+        line-height: 20px;
+        border-radius: 10px;
+        width: 35%;
+        font-weight: 700;
+
+    }
+
+    .upcoming-page-items-area {
+        grid-column: 1/ -1;
+        width: 100%;
+    }
+
+    .upcoming-items-area {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .upcoming-image-area a {
+        font-size: 15px;
+    }
+
+    .upcoming-image-area h3 {
+        font-size: 15px;
+    }
+
+    .upcoming-time-area {
+        font-size: 15px;
+    }
 }
 
 /* Tablets Devices */
@@ -638,7 +777,7 @@ footer {
     }
 
     .header-image img {
-        width: 90%;
+        width: 100%;
         height: 100%;
     }
 
@@ -667,12 +806,12 @@ footer {
 
     .blog-page-button-area a {
         background-color: #FFFFFF;
-        color: #000000;
+        color: #541690;
         text-decoration: none;
         display: inline-block;
         font-size: 17px;
         border-radius: 5px;
-        border: 1px solid black;
+        border: 1px solid #541690;
         font-weight: 700;
         width: 26%;
         margin: 30px auto;
@@ -701,7 +840,7 @@ footer {
 
     .blog-items-button a {
         background-color: #FFCD38;
-        color: gray;
+        color: #541690;
         text-decoration: none;
         display: inline-block;
         font-size: 25px;
@@ -720,6 +859,57 @@ footer {
 
     .contact-area p {
         font-size: 20px;
+    }
+
+    /* Upcoming Area */
+    main {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .upcoming-area {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .upcoming-page-button-area {
+        grid-column: 1/ -1;
+        background-color: white;
+        height: 100px;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .upcoming-page-button-area a {
+        background-color: #FFFFFF;
+        color: #541690;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 17px;
+        border-radius: 5px;
+        border: 1px solid #541690;
+        font-weight: 700;
+        width: 26%;
+        margin: 30px auto;
+        margin-right: 10px;
+    }
+
+    .upcoming-page-button-area a:last-child {
+        margin-right: 0;
+    }
+
+    .upcoming-page-items-area {
+        grid-column: 1/-1;
+    }
+
+    .upcoming-items-area {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
     }
 }
 
@@ -762,6 +952,12 @@ footer {
         width: 100%;
     }
 
+    /* Upcoming Area */
+
+    .upcoming-page-button-area {
+        height: 55%;
+    }
+
 }
 
 /* Larg Desktop Devices */
@@ -797,5 +993,10 @@ footer {
 
     .blog-page-button-area {
         height: 43%;
+    }
+
+    /* Upcoming Area */
+    .upcoming-page-button-area {
+        height: 48%;
     }
 }
